@@ -50,7 +50,7 @@ header #logo {
   float: left;
   height: 40px;
   width: 170px;
-  margin-left: 20%;
+  margin-left: 5%;
 }
 
 header #logo img{
@@ -61,6 +61,7 @@ header #logo img{
 header .menu {
   float: right;
   list-style: none;
+  margin-right: 5%;
 }
 
 header .menu li {
@@ -212,14 +213,14 @@ footer .container {
 /* --------  Responsividade  --------*/
 
 @media all and (max-width: 768px) {
-  .container {
+  .bloco {
     width: 95%;
   }
-  .col.four {
+  .coluna.quatro {
     width: 48%;
     margin: 1%;
   }
-  .col.three {
+  .coluna.tres {
     display: block;
     width: 95%;
     padding: 0;
@@ -237,53 +238,42 @@ footer .container {
     transform: none;
     margin: 10px auto 0 auto;
   }
-  ul.nav {
-    float: none;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .responsivegroup {
-    display: block;
-  }
-  .responsivegroup:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 @media all and (min-width: 768px) {
-  .container {
-    width: 750px;
+  .bloco {
+    width: 700px;
   }
-}
-
-@media all and (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-@media all and (max-width:450px) {
-  .col, .col.four, .col.three, .col.two {
+  .coluna.dois {
     display: block;
     width: 95%;
     padding: 0;
     margin: 0 auto;
     float: none;
   }
-  .col.extrapad {
-    padding: 1%;
-    margin-bottom: 10px;
+}
+
+@media all and (min-width: 992px) {
+  .bloco {
+    width: 970px;
   }
-  .group {
-    display: none;
+}
+
+@media all and (min-width: 1200px) {
+  .bloco {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:767px) {
+  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .menu {
+    visibility: hidden;
   }
 }
