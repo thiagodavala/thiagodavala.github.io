@@ -8,16 +8,12 @@ body {
 
 section {
   width: 100%;
-}
-
-.bloco {
-  width: 1170px;
   margin: 0 auto;
   overflow: hidden;
   padding: 30px 0 50px 0;
 }
 
-.bloco hr {
+section hr {
   width: 30px;
 }
 
@@ -25,9 +21,6 @@ section {
   background: #f7f7f7;
 }
 
-.cor_texto {
-  color: #fff;
-}
 
 
 /* --------  Header  -------- */
@@ -87,6 +80,7 @@ section .imagem_fundo {
 section .titulo {
   font-family: 'Tahoma', sans-serif;
   letter-spacing: 1px;
+  color: #FFF;
 }
 
 section h1.titulo {
@@ -146,17 +140,12 @@ section h2.titulo {
   width: 100%;
 }
 
-.coluna.fundo {
-  background: #FFF;
-}
-
 /* --------  Textos  -------- */
 
-.bloco > h1:not(.titulo) {
+h1:not(.titulo) {
   margin-bottom: 30px;
   text-align: center;
   font-size: 26px;
-
 }
 
 h2 {
@@ -182,9 +171,13 @@ h2 {
 
 /* --------  Footer  -------- */
 
-footer{
+footer {
   background-color: #01acea;
   width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 50px 0;
+  color: #fff;
 }
 
 footer .container {
@@ -194,28 +187,11 @@ footer .container {
 /* --------  Responsividade  --------*/
 
 @media all and (max-width: 768px) {
-  .bloco {
-    width: 95%;
-  }
-  .coluna.quatro {
-    width: 48%;
-    margin: 1%;
-  }
-  .header {
-    height: auto;
-    background: #eee;
-  }
-  #logo {
-    position: initial;
-    float: none;
-    display: block;
-    margin: 10px auto 0 auto;
-  }
   .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
     display: block;
-    width: 95%;
+    width: 80%;
     padding: 0;
-    margin: 0 auto;
+    margin: 10px auto;
     float: none;
   }
   .menu {
@@ -229,9 +205,9 @@ footer .container {
   }
   .coluna.dois {
     display: block;
-    width: 95%;
+    width: 80%;
     padding: 0;
-    margin: 0 auto;
+    margin: 10px auto;
     float: none;
   }
 }
