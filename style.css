@@ -2,41 +2,41 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
 }
 
-.section {
+section {
   width: 100%;
 }
 
-.container {
+.bloco {
   position: relative;
   width: 1170px;
   margin: 0 auto;
   color: #444;
-  font-size: 14px;
-  font-weight: 300;
-  font-family: Roboto, 'Open Sans', Arial, sans-serif;
   overflow: hidden;
-}
-
-.section .container {
   padding: 30px 0 50px 0;
 }
 
-.section.bg {
+.bloco hr {
+  width: 30px;
+}
+
+.cor_fundo {
   background: #f7f7f7;
 }
 
-/* --------  Header  -------- */
-
-.hold {
-  height: 60px;
+.cor_texto {
+  color: #fff;
 }
 
-.header {
-  line-height: 60px;
+
+/* --------  Header  -------- */
+header {
+  height: 60px;
   width: 100%;
-  transition: line-height 0.2s linear, box-shadow 0.2s linear;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,269 +44,137 @@ body {
   background: #E7E7E7;
 }
 
-.header.small {
-  line-height: 50px;
-  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
-}
-
-.header.small > .container > #logo {
-  height: 40px;
-}
-
-#logo {
+header #logo {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 15%;
   float: left;
   height: 40px;
   width: 170px;
-  margin-left: 5px;
+  margin-left: 20%;
 }
-#logo img{
+
+header #logo img{
   max-width: 100%;
   max-height: 100%;
 }
 
-ul.nav {
+header .menu {
   float: right;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-ul.nav li {
+header .menu li {
   float: left;
-  position: relative;
-}
-
-ul.nav li a {
-  transition: color 0.2s linear;
   font-size: 18px;
-}
-
-ul.nav li:hover a {
-  color: #01acea;
-}
-
-ul.nav li a {
-  padding: 21px;
+  padding: 5px 15px;
   color: initial;
   text-decoration: initial;
 }
 
-/* --------  Slider  -------- */
-
-.section .slider {
-  background: url(img/sea-bg.jpg); /* https://www.pexels.com/photo/beach-sea-blue-endless-wild-nature-103567/ */
-  background-size: 100% 100%;
-
+header .menu li a {
+  color: initial;
+  text-decoration: initial;
 }
 
-.slidercontent {
+header .menu li:hover a {
+  color: #01acea;
+}
+
+
+
+/* --------  Slider  -------- */
+
+section .imagem_fundo {
+  background: url(img/sea-bg.jpg); /* https://www.pexels.com/photo/beach-sea-blue-endless-wild-nature-103567/ */
+  background-size: 100% 100%;
+  height: 35%;
+  padding: 5% 0 50px 0;
+}
+
+section .centro {
   text-align: center;
 }
 
-.hero {
+section .titulo {
   font-family: 'Tahoma', sans-serif;
-  color: white;
-  font-weight: normal;
   letter-spacing: 1px;
   text-shadow: 1px 0px black;
 }
 
-h1.hero {
+section h1.titulo {
   font-size: 54px;
 }
 
-h2.hero {
+section h2.titulo {
   font-size: 30px;
   margin-bottom: 60px;
 }
 
-h1.hero:after {
-  content: "";
-  width: 300px;
-  position: relative;
-  border-bottom: 1px solid #aaa;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
-}
-
-.call {
-  color: white;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.call span {
-  display: inline;
-  border: 1px solid white;
-  padding: 8px 13px;
-  font-size: 20px;
-  transition: background 0.15s linear;
-}
-
-.call span:hover {
-  background: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-}
-
 /* --------  Colunas  -------- */
 
-.col {
+.coluna {
   float: left;
   padding: 0;
   margin: 0;
   position: relative;
 }
 
-.col.four {
+.coluna.quatro {
   width: 23%;
   margin: 0 1%;
 }
 
-.col.three {
+.coluna.tres {
   width: 31.3%;
   margin: 0 1%;
 }
 
-.col.two {
+.coluna.dois {
   width: 40%;
   margin: 0 2.5%;
   padding: 0 2.5%;
 }
 
-.col.extrapad {
+.coluna.extrapad {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.col .title,
-.col .title-img {
-  font-size: 21px;
-  font-weight: 300;
-  font-family: 'Roboto Slab', sans-serif;
-}
-
-.col .title:after {
-  content: "";
-  width: 50px;
-  position: relative;
-  border-bottom: 1px solid #eee;
-  display: block;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
-}
-
-.col .title-img {
-  font-size: 19px;
-}
-
-.col h1.side,
-.col p.side,
-.col span.side:first-of-type {
-  margin-left: 50px;
-  text-align: left;
-}
-
-.col .icon {
+.coluna .icone {
   border-radius: 50%;
   height: 85px;
   width: 85px;
   line-height: 85px;
   text-align: center;
   margin: 0 auto;
-  transition: background 0.25s linear, color 0.25s linear;
 }
 
-.col .icon img{
+.coluna .icone img{
   max-width: 60%;
   max-height: 60%;
   margin: 15px;
 }
 
-.col .icon.side {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  top: -15px;
-  height: 50px;
-  width: 50px;
+.coluna:hover > .icone {
+  background: lightblue;
 }
 
-.col:hover > .icon {
-  background: #1ec133;
-  color: white;
-}
-
-.col:hover > .icon.side {
-  background: initial;
-  color: initial;
-}
-
-.responsivegroup {
-  display: none;
-}
-/*
-  Column specifics
-*/
-
-.col p,
-.col h1 {
-  padding: 0 1%;
-  text-align: center;
-}
-
-.group.margin {
-  margin-bottom: 20px;
-}
-
-.col .imgholder {
-  height: 300px;
-  width: 100%;
-  background: #333;
-  transition: background 0.3s linear;
-}
-
-.imgholder img {
+.coluna img {
   height: 300px;
   width: 100%;
 }
 
-.col.bg {
+.coluna.fundo {
   background: #FFF;
-}
-
-.col.pointer {
-  cursor: pointer;
-}
-
-.col.bg:hover .imgholder {
-  background: #555;
-}
-
-.col span.title-img {
-  font-size: 20px;
 }
 
 /* --------  Textos  -------- */
 
-.container > h1:not(.hero) {
+.bloco > h1:not(.titulo) {
   margin-bottom: 30px;
   text-align: center;
-}
+  font-size: 26px;
 
-.container > h1:after {
-  content: "";
-  width: 30px;
-  position: relative;
-  border-bottom: 1px solid #aaa;
-  display: block;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
 }
 
 h2 {
@@ -316,29 +184,17 @@ h2 {
   font-size: 18px;
 }
 
-.left,
-.left > h1,
-.left > p {
+.esquerda {
   text-align: left;
 }
-
-.reset {
-  text-align: left !important;
+.direita {
+  text-align: right;
 }
-
-.reset:after {
-  display: none !important;
+.centro {
+  text-align: center;
 }
-/* 
-  Slider with Content
-*/
-
-.white h1,
-.white h2,
-.white p,
-.white div,
-.white a {
-  color: #fff;
+.justificado {
+  text-align: justify;
 }
 
 
@@ -354,12 +210,6 @@ footer .container {
 }
 
 /* --------  Responsividade  --------*/
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 @media all and (max-width: 768px) {
   .container {
