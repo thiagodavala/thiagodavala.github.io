@@ -220,13 +220,6 @@ footer .container {
     width: 48%;
     margin: 1%;
   }
-  .coluna.tres {
-    display: block;
-    width: 95%;
-    padding: 0;
-    margin: 0 auto;
-    float: none;
-  }
   .header {
     height: auto;
     background: #eee;
@@ -238,9 +231,19 @@ footer .container {
     transform: none;
     margin: 10px auto 0 auto;
   }
+  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .menu {
+    visibility: hidden;
+  }
 }
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 992px) {
   .bloco {
     width: 700px;
   }
@@ -262,18 +265,5 @@ footer .container {
 @media all and (min-width: 1200px) {
   .bloco {
     width: 1170px;
-  }
-}
-
-@media all and (max-width:767px) {
-  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
-    display: block;
-    width: 95%;
-    padding: 0;
-    margin: 0 auto;
-    float: none;
-  }
-  .menu {
-    visibility: hidden;
   }
 }
