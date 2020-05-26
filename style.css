@@ -72,15 +72,16 @@ header .menu li:hover a {
 
 section .imagem_fundo {
   background: url(img/sea-bg.jpg); /* https://www.pexels.com/photo/beach-sea-blue-endless-wild-nature-103567/ */
-  background-size: 100% 100%;
-  height: 50%;
-  padding: 10% 0 50px 0;
+  background-size: cover;
+  height: 100%;
+  padding: 10px;
 }
 
 section .titulo {
   font-family: 'Tahoma', sans-serif;
   letter-spacing: 1px;
   color: #FFF;
+  padding: 10% 0 0 0;
 }
 
 section h1.titulo {
@@ -89,7 +90,7 @@ section h1.titulo {
 
 section h2.titulo {
   font-size: 30px;
-  margin-bottom: 60px;
+  padding: 5% 0 0 0;
 }
 
 /* --------  Colunas  -------- */
@@ -137,6 +138,12 @@ section h2.titulo {
 
 .coluna img {
   height: 300px;
+  width: 100%;
+}
+
+.coluna iframe { 
+  top: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -202,13 +209,6 @@ footer .container {
 @media all and (max-width: 992px) {
   .bloco {
     width: 700px;
-  }
-  .coluna.dois {
-    display: block;
-    width: 80%;
-    padding: 0;
-    margin: 10px auto;
-    float: none;
   }
 }
 
