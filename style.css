@@ -1,7 +1,6 @@
 html,
 body {
   margin: 0;
-  padding: 0;
   font-size: 14px;
   font-weight: 300;
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
@@ -12,10 +11,8 @@ section {
 }
 
 .bloco {
-  position: relative;
   width: 1170px;
   margin: 0 auto;
-  color: #444;
   overflow: hidden;
   padding: 30px 0 50px 0;
 }
@@ -38,9 +35,7 @@ header {
   height: 60px;
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  z-index: 10;
   background: #E7E7E7;
 }
 
@@ -54,7 +49,6 @@ header #logo {
 }
 
 header #logo img{
-  max-width: 100%;
   max-height: 100%;
 }
 
@@ -68,8 +62,6 @@ header .menu li {
   float: left;
   font-size: 18px;
   padding: 5px 15px;
-  color: initial;
-  text-decoration: initial;
 }
 
 header .menu li a {
@@ -83,23 +75,18 @@ header .menu li:hover a {
 
 
 
-/* --------  Slider  -------- */
+/* --------  Capa  -------- */
 
 section .imagem_fundo {
   background: url(img/sea-bg.jpg); /* https://www.pexels.com/photo/beach-sea-blue-endless-wild-nature-103567/ */
   background-size: 100% 100%;
-  height: 35%;
-  padding: 5% 0 50px 0;
-}
-
-section .centro {
-  text-align: center;
+  height: 50%;
+  padding: 10% 0 50px 0;
 }
 
 section .titulo {
   font-family: 'Tahoma', sans-serif;
   letter-spacing: 1px;
-  text-shadow: 1px 0px black;
 }
 
 section h1.titulo {
@@ -136,16 +123,10 @@ section h2.titulo {
   padding: 0 2.5%;
 }
 
-.coluna.extrapad {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .coluna .icone {
   border-radius: 50%;
   height: 85px;
   width: 85px;
-  line-height: 85px;
   text-align: center;
   margin: 0 auto;
 }
@@ -228,7 +209,6 @@ footer .container {
     position: initial;
     float: none;
     display: block;
-    transform: none;
     margin: 10px auto 0 auto;
   }
   .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
