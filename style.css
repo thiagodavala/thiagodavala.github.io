@@ -10,7 +10,7 @@ section {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 30px 0 50px 0;
+  padding: 30px 0 20px 0;
 }
 
 section hr {
@@ -69,26 +69,29 @@ header .menu li:hover a {
 
 
 /* --------  Capa  -------- */
+figure {
+  margin: 0 auto;
+}
 
-section .imagem_fundo {
+figure .imagem_fundo {
   background: url(img/sea-bg.jpg); /* https://www.pexels.com/photo/beach-sea-blue-endless-wild-nature-103567/ */
   background-size: cover;
   height: 100%;
   padding: 10px;
 }
 
-section .titulo {
+figure .titulo {
   font-family: 'Tahoma', sans-serif;
   letter-spacing: 1px;
   color: #FFF;
   padding: 10% 0 0 0;
 }
 
-section h1.titulo {
+figure h1.titulo {
   font-size: 54px;
 }
 
-section h2.titulo {
+figure h2.titulo {
   font-size: 30px;
   padding: 5% 0 0 0;
 }
@@ -97,25 +100,22 @@ section h2.titulo {
 
 .coluna {
   float: left;
-  padding: 0;
-  margin: 0;
+  padding: 0 5%;
   position: relative;
 }
 
 .coluna.quatro {
-  width: 23%;
-  margin: 0 1%;
+  width: 15%;
+  padding: 0 5% 0 5%;
 }
 
 .coluna.tres {
-  width: 31.3%;
-  margin: 0 1%;
+  width: 29%;
+  padding: 0 2%;
 }
 
 .coluna.dois {
   width: 40%;
-  margin: 0 2.5%;
-  padding: 0 2.5%;
 }
 
 .coluna .icone {
@@ -149,17 +149,16 @@ section h2.titulo {
 
 /* --------  Textos  -------- */
 
-h1:not(.titulo) {
-  margin-bottom: 30px;
+h1 {
   text-align: center;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 h2 {
   font-family: 'Roboto Slab', sans-serif;
   text-align: center;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .esquerda {
@@ -203,23 +202,5 @@ footer .container {
   }
   .menu {
     visibility: hidden;
-  }
-}
-
-@media all and (max-width: 992px) {
-  .bloco {
-    width: 700px;
-  }
-}
-
-@media all and (min-width: 992px) {
-  .bloco {
-    width: 970px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .bloco {
-    width: 1170px;
   }
 }
