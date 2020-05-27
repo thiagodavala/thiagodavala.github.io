@@ -200,8 +200,13 @@ footer .container {
     margin: 10px auto;
     float: none;
   }
+  #logo {
+    position: relative !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    text-align: center;
+  }
   .menu {
-    margin-top: 70px;
     width: 100%;
     background-color: black;
   }
@@ -209,13 +214,12 @@ footer .container {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid white;
-    padding-left: 0px !important;
+    padding: 15px 0px 15px 0px !important;
   }
   .menu > li > a {
     color: white !important;
   }
   header {
     position: relative;
-    height: 150px;
   }
 }
