@@ -172,20 +172,9 @@ footer .container {
     text-align: center;
   }
   .menu {
-    width: 100%;
-    background-color: black;
+    visibility: hidden;
   }
-  .menu > li {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid white;
-    padding: 15px 0px 15px 0px !important;
-  }
-  .menu > li > a {
-    color: white !important;
-  }
-  header {
-    position: relative;
-    height: 200px;
+  figure h2.titulo {
+    margin: 0 10% 0 10% !important;
   }
 }
