@@ -39,7 +39,6 @@ header #logo img{
 header .menu {
   float: right;
   list-style: none;
-  /*margin-right: 5%;*/
 }
 header .menu li {
   float: left;
@@ -173,6 +172,9 @@ footer .container {
   }
   .menu {
     visibility: hidden;
+  }
+  figure h1.titulo {
+    margin-top: 40% !important;
   }
   figure h2.titulo {
     margin: 0 10% 0 10% !important;
