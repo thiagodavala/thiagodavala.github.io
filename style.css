@@ -48,7 +48,7 @@ header #logo img{
 header .menu {
   float: right;
   list-style: none;
-  margin-right: 5%;
+  /*margin-right: 5%;*/
 }
 
 header .menu li {
@@ -201,6 +201,21 @@ footer .container {
     float: none;
   }
   .menu {
-    visibility: hidden;
+    margin-top: 70px;
+    width: 100%;
+    background-color: black;
+  }
+  .menu > li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-left: 0px !important;
+  }
+  .menu > li > a {
+    color: white !important;
+  }
+  header {
+    position: relative;
+    height: 150px;
   }
 }
