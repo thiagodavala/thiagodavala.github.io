@@ -5,24 +5,18 @@ body {
   font-weight: 300;
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
 }
-
 section {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
   padding: 30px 0 20px 0;
 }
-
 section hr {
   width: 30px;
 }
-
 .cor_fundo {
   background: #f7f7f7;
 }
-
-
-
 /* --------  Header  -------- */
 header {
   height: 60px;
@@ -31,93 +25,78 @@ header {
   z-index: 10;
   background: #E7E7E7;
 }
-
 header #logo {
   position: absolute;
-  top: 15%;
+  top: 10px;
   float: left;
   height: 40px;
   width: 170px;
   margin-left: 5%;
 }
-
 header #logo img{
   max-height: 100%;
 }
-
 header .menu {
   float: right;
   list-style: none;
   /*margin-right: 5%;*/
 }
-
 header .menu li {
   float: left;
   font-size: 18px;
   padding: 5px 15px;
 }
-
 header .menu li a {
   color: initial;
   text-decoration: initial;
 }
-
 header .menu li:hover a {
   color: #01acea;
 }
-
-
-
 /* --------  Capa  -------- */
 figure {
   margin: 0 auto;
 }
-
 figure .imagem_fundo {
   background: url(img/sea-bg.jpg); /* https://www.pexels.com/photo/beach-sea-blue-endless-wild-nature-103567/ */
   background-size: cover;
   height: 100%;
   padding: 10px;
 }
-
 figure .titulo {
-  font-family: 'Tahoma', sans-serif;
-  letter-spacing: 1px;
   color: #FFF;
-  padding: 10% 0 0 0;
+  line-height: 0.9;
+  text-shadow: 1px 1px black;
 }
-
 figure h1.titulo {
-  font-size: 54px;
+  font-size: 70px;
+  letter-spacing: -5px;
+  margin: 10% 20% 0 20%;
+  padding-bottom: 20px;
 }
-
 figure h2.titulo {
+  padding-top: 20px;
   font-size: 30px;
-  padding: 5% 0 0 0;
+  margin: 0 30% 0 30%;
+  border-top: 3px solid white;
 }
-
 /* --------  Colunas  -------- */
-
 .coluna {
   float: left;
   padding: 0 5%;
   position: relative;
 }
-
 .coluna.quatro {
   width: 15%;
   padding: 0 5% 0 5%;
 }
-
 .coluna.tres {
   width: 29%;
   padding: 0 2%;
 }
-
 .coluna.dois {
   width: 40%;
 }
-
 .coluna .icone {
   border-radius: 50%;
   height: 85px;
@@ -125,42 +104,34 @@ figure h2.titulo {
   text-align: center;
   margin: 0 auto;
 }
-
 .coluna .icone img{
   max-width: 60%;
   max-height: 60%;
   margin: 15px;
 }
-
 .coluna:hover > .icone {
   background: lightblue;
 }
-
 .coluna img {
   height: 300px;
   width: 100%;
 }
-
 .coluna iframe { 
   top: 0;
   left: 0;
   width: 100%;
 }
-
 /* --------  Textos  -------- */
-
 h1 {
   text-align: center;
   font-size: 20px;
 }
-
 h2 {
   font-family: 'Roboto Slab', sans-serif;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
 }
-
 .esquerda {
   text-align: left;
 }
@@ -173,10 +144,7 @@ h2 {
 .justificado {
   text-align: justify;
 }
-
-
 /* --------  Footer  -------- */
-
 footer {
   background-color: #01acea;
   width: 100%;
@@ -185,13 +153,10 @@ footer {
   padding: 30px 0 50px 0;
   color: #fff;
 }
-
 footer .container {
   padding: 30px 0 50px 0;
 }
-
 /* --------  Responsividade  --------*/
-
 @media all and (max-width: 768px) {
   .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
     display: block;
@@ -221,5 +186,6 @@ footer .container {
   }
   header {
     position: relative;
+    height: 200px;
   }
 }
