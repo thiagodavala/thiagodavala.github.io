@@ -164,19 +164,19 @@ footer .container {
     margin: 10px auto;
     float: none;
   }
-  #logo {
-    position: relative !important;
-    width: 100% !important;
-    margin-left: 0px !important;
+  header #logo {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
     text-align: center;
   }
   .menu {
     visibility: hidden;
   }
   figure h1.titulo {
-    margin-top: 40% !important;
+    margin-top: 40%;
   }
   figure h2.titulo {
-    margin: 0 10% 0 10% !important;
+    margin: 0 10% 0 10%;
   }
 }
